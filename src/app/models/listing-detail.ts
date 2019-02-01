@@ -1,9 +1,9 @@
 import { Listing } from './listing';
 
 export class ListingDetail extends Listing {
-    formatted_phone_number: string;
-    reviews: Review[];
-    website: string;
+    formatted_phone_number?: string;
+    reviews?: Review[];
+    website?: string;
 }
 
 class Review {

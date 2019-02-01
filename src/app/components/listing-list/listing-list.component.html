@@ -1,0 +1,46 @@
+<ion-content no-padding>
+    <ion-card *ngFor="let local of listings">
+      <ion-card-content no-padding (click)="goToDetails(local)">
+          <ion-img [src]="local.photos[0].photo_reference"></ion-img>
+          <ion-grid>
+              <ion-row>
+                <ion-col><ion-card-title>{{ local.name }}</ion-card-title></ion-col>
+                <ion-col class="opening-hours"> <ion-text [color]="local.opening_hours.open_now ? 'success' : 'danger'">{{ local.opening_hours.open_now ? "Open" : "Closed" }}</ion-text></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <app-rating [rate]="local.ratingCount" [readonly]="true" [size]="'small'"></app-rating>
+                  <ion-text class="card-details">{{ local.opening_hours.weekday_text[0] }}</ion-text>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+        </ion-card-content>
+        <ion-card-content no-padding>
+          <ion-footer>
+              <ion-row nowrap class="bottom-bar">
+                  <ion-col>
+                    <ion-button fill="clear" expand="block" icon-only class="border-right">
+                      <ion-icon name="map"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" expand="block" icon-only class="border-right" (click)="addToFavorites(local)">
+                      <ion-icon [name]="local.isFavorite ? 'heart' : 'heart-empty'"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" expand="block" icon-only class="border-right">
+                      <ion-icon name="call"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" expand="block" icon-only>
+                      <ion-icon name="share"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+        </ion-footer>
+        </ion-card-content>
+    </ion-card>
+  </ion-content>
+  

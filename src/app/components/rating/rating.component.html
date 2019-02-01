@@ -1,0 +1,6 @@
+<ion-buttons>
+    <ion-button slot="icon-only" [disabled]="readonly" [size]="size" [fill]="fill" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
+      (click)="onClick(i + 1)" (mouseover)="hoverRate = i + 1" (mouseleave)="hoverRate = 0">
+      <ion-icon name="star" [class.filled]="(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))"></ion-icon>
+    </ion-button>
+  </ion-buttons>

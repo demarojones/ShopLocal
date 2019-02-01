@@ -1,4 +1,5 @@
 export class Listing {
+  id?: string;
   place_id?: string;
   name?: string;
   description?: string;

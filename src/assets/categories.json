@@ -1,0 +1,33 @@
+[
+    { "id": 1, "name": "Restaurants", "type": "Food & Drink"},
+    { "id": 2, "name": "Bar", "type": "Food & Drink"},
+    { "id": 3, "name": "Coffee", "type": "Food & Drink"},
+    { "id": 4, "name": "Brunch", "type": "Food & Drink"},
+    { "id": 5, "name": "Dessert", "type": "Food & Drink"},
+    { "id": 6, "name": "Delivery", "type": "Food & Drink"},
+    { "id": 7, "name": "Take Out", "type": "Food & Drink"},
+    
+    { "id": 8, "name": "Events", "type": "Things To Do"},
+    { "id": 9, "name": "Parks", "type": "Things To Do"},
+    { "id": 10, "name": "Gyms", "type": "Things To Do"},
+    { "id": 11, "name": "Art", "type": "Things To Do"},
+    { "id": 12, "name": "Attraction", "type": "Things To Do"},
+    { "id": 13, "name": "Live Music", "type": "Things To Do"},
+    { "id": 14, "name": "Movies", "type": "Things To Do"},
+
+    { "id": 15, "name": "Groceries", "type": "Shopping" },
+    { "id": 16, "name": "Beauty Supplies", "type": "Shopping"},
+    { "id": 17, "name": "Car Dealers", "type": "Shopping"},
+    { "id": 18, "name": "Home and Garden", "type": "Shopping"},
+    { "id": 19, "name": "Electronics", "type": "Shopping"},
+    { "id": 20, "name": "Sporting Goods", "type": "Shopping"},
+    { "id": 21, "name": "Convenience Stores", "type": "Shopping"},
+
+    { "id": 22, "name": "Hotels", "type": "Services"},
+    { "id": 23, "name": "Car Repair/Maintenance", "type": "Services"},
+    { "id": 24, "name": "Dry Cleaning", "type": "Services"},
+    { "id": 25, "name": "Electric Vehicle Charging", "type": "Services"},
+    { "id": 26, "name": "Mail and Shipping", "type": "Services"},
+    { "id": 27, "name": "Car Wash", "type": "Services"},
+    { "id": 28, "name": "ATMs", "type": "Services"}
+]
